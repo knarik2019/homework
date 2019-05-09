@@ -1,0 +1,14 @@
+let arr = [6, 78, 'n', 0, 1]
+function removefirst (arr) {
+  if (0 == arr.length) {
+    return arr;
+  } 
+  if (1 == arr.length) {
+    arr.pop();
+    return arr;
+  }
+  let newarr = removefirst(arr.slice(0, arr.length - 1));
+  newarr.push(arr.pop());
+  return newarr
+ }
+console.log(removefirst(arr))
