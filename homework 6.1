@@ -1,0 +1,16 @@
+ let arr = [1,45,2,3];
+ let first = arr[0];
+ let second = arr[1];
+ let maxproduct = first * second;
+ 
+  for ( let i = 1; i < (arr.length-1); i++) {
+   if (arr[i] * arr[i+1] > maxproduct) {
+     first = arr[i];
+     second = arr[i+1];
+     maxproduct = first * second;
+   }
+  }
+  
+  console.log(maxproduct)
+  console.log(first)
+  console.log(second)
