@@ -1,0 +1,72 @@
+lass Author {
+  constructor(name, email, gender) {
+    this.name = name;
+    this.email = email;
+    this.gender = gender;
+  }
+  
+    get name() { 
+    return this._name;
+    }
+    get email() {
+    return this._email;
+    }
+    get gender() {
+    return this._gender;
+    }
+  
+    set name(newName) {
+    this._name = newName;
+    }
+    set email(newEmail) {
+    this._myemail = newEmail;
+    }
+    set gender(newGender) {
+    this._mygender = newGender;
+    }
+    toString(){
+return "this._name" + "this._email"+"this.gender";
+}
+  }
+
+class Book{
+constructor(title, author, price, quantity){
+this.title = title;
+this.author = author;
+this.price = price;
+this.quantity = quantity;
+}
+ get title(){
+ return this._title;
+ }
+ get author(){
+ return this._author;
+ }
+ get price(){
+ return this._price;
+ }
+ get quantity(){
+ return this._quantity;
+ }
+
+ set title(newTitle){
+ this._title = newTitle;
+ }
+ set author(newAuthor){
+ this._author = newAuthor;
+ }
+ set price(newPrice){
+ this._price = newPrice;
+ }
+ set quantity(newQuantity){
+ this._quantity = newQuantity;
+ }
+
+ toString(){
+ return "this._title" + "this._author" + "this._price" + "this._quantity";
+ }
+ getProfit(){
+ return this._price * this._quantity;
+ }
+ 
+}
